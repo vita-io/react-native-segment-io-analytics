@@ -27,6 +27,11 @@ RNSegmentIOAnalytics.reset();
 ## Documentation
 https://segment.com/docs/libraries/ios/#getting-started
 
-
+## Handling possible issues
+### Google SDK BitCode issue
+```
+ld: '......./Pods/GoogleIDFASupport/Libraries/libAdIdAccessLibrary.a(TAGActualAdIdAccess.o)' does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture arm64
+```
+There are instruction for fixing it here: https://stackoverflow.com/questions/31395260/google-analytics-libadidaccess-a-does-not-contain-bitcode
 
 
