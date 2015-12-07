@@ -24,6 +24,8 @@ RNSegmentIOAnalytics.flush();
 RNSegmentIOAnalytics.reset();
 ```
 
+## Documentation
+https://segment.com/docs/libraries/ios/#getting-started
 
 
 
