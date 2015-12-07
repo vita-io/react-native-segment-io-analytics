@@ -49,6 +49,13 @@ RCT_EXPORT_METHOD(reset) {
     [[SEGAnalytics sharedAnalytics] reset];
 }
 
+/*
+ https://segment.com/docs/libraries/ios/#logging
+ */
+RCT_EXPORT_METHOD(debug: (BOOL)isEnabled) {
+    [SEGAnalytics debug:isEnabled];
+}
+
 -(NSMutableDictionary*) convertToStringDictionary: (NSDictionary *)properties {
     /*
      According to React Native's documentation:

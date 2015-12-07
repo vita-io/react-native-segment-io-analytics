@@ -52,6 +52,13 @@ var RNSegmentIOAnalytics = {
     flush: function () {
         NativeRNSegmentIOAnalytics.flush();
     },
+
+    /*
+     https://segment.com/docs/libraries/ios/#logging
+     */
+    debug: function (isEnabled) {
+        NativeRNSegmentIOAnalytics.debug(isEnabled);
+    },
 };
 
 module.exports = RNSegmentIOAnalytics;
