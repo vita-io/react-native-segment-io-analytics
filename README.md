@@ -7,7 +7,7 @@ Written by Tal Kain <tal@kain.net>
 2. In your Podfile, add `pod "Analytics"` to your project.
 3. Make sure your project links to *libAnalytics.a* and *libRNSegmentIOAnalytics.a* (The libraries should be listed under Build Phases -> Link Binary With Libraries".
 
-# Usage sample
+## Usage sample
 ```javascript
 var RNSegmentIOAnalytics = require('RNSegmentIOAnalytics');
 
