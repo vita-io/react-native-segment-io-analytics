@@ -11,21 +11,47 @@ var NativeRNSegmentIOAnalytics = require('NativeModules').RNSegmentIOAnalytics;
  */
 
 var RNSegmentIOAnalytics = {
-  test: function() {
-    NativeRNSegmentIOAnalytics.test();
-  },
+    /*
+    Setting up the Segment IO Analytics service
+     */
+    setup: function (configKey, flushAt = 20) {
+        NativeRNSegmentIOAnalytics.setup(configKey, flushAt);
+    },
 
-  setup: function(configKey) {
-    NativeRNSegmentIOAnalytics.setup(configKey);
-  },
+    /*
+     https://segment.com/docs/libraries/ios/#identify
+     */
+    identifyUser: function (userId, traits) {
+        NativeRNSegmentIOAnalytics.identifyUser(userId, traits);
+    },
 
-  identifyUser: function(userId, traits) {
-    NativeRNSegmentIOAnalytics.identifyUser(userId, traits);
-  },
+    /*
+     https://segment.com/docs/libraries/ios/#track
+     */
+    track: function (trackText, properties) {
+        NativeRNSegmentIOAnalytics.track(trackText, properties);
+    },
 
-  track: function(trackText, properties) {
-    NativeRNSegmentIOAnalytics.track(trackText, properties);
-  },
+    /*
+     https://segment.com/docs/libraries/ios/#screen
+     */
+    screen: function (screenName, properties) {
+        NativeRNSegmentIOAnalytics.screen(screenName, properties);
+    },
+
+    /*
+     https://segment.com/docs/libraries/ios/#reset
+     */
+    reset: function () {
+        NativeRNSegmentIOAnalytics.reset();
+    },
+
+    /*
+     https://segment.com/docs/libraries/ios/#flushing
+     */
+    flush: function () {
+        NativeRNSegmentIOAnalytics.flush();
+    },
 };
 
 module.exports = RNSegmentIOAnalytics;

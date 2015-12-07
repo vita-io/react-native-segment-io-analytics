@@ -1,27 +1,54 @@
 #import "RNSegmentIOAnalytics.h"
 #import "RCTConvert.h"
 #import "Analytics.h"
+#import <Foundation/Foundation.h>
 
 @implementation RNSegmentIOAnalytics
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(setup:(NSString*)configKey)
+RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt)
 {
+    SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:configKey];
+    configuration.flushAt = flushAt;
     NSLog(@"Setting up RNSegmentIOAnalytics using key=%@", configKey);
-    [SEGAnalytics setupWithConfiguration:[SEGAnalyticsConfiguration configurationWithWriteKey:configKey]];
+   [SEGAnalytics setupWithConfiguration:configuration];
 }
 
+/*
+ https://segment.com/docs/libraries/ios/#identify
+ */
 RCT_EXPORT_METHOD(identifyUser:(NSString*)userId traits:(NSDictionary *)traits) {
     NSLog(@"identifyUser: identifying user (id=%@)", userId);
     [[SEGAnalytics sharedAnalytics] identify:userId traits:[self convertToStringDictionary:traits]];
-    [[SEGAnalytics sharedAnalytics] flush];
 }
 
+/*
+ https://segment.com/docs/libraries/ios/#track
+ */
 RCT_EXPORT_METHOD(track:(NSString*)trackText properties:(NSDictionary *)properties) {
     [[SEGAnalytics sharedAnalytics] track:trackText
                                properties:[self convertToStringDictionary:properties]];
+}
+/*
+ https://segment.com/docs/libraries/ios/#screen
+ */
+RCT_EXPORT_METHOD(screen:(NSString*)screenName properties:(NSDictionary *)properties) {
+    [[SEGAnalytics sharedAnalytics] screen:screenName properties:[self convertToStringDictionary:properties]];
+}
+
+/*
+ https://segment.com/docs/libraries/ios/#flushing
+ */
+RCT_EXPORT_METHOD(flush) {
     [[SEGAnalytics sharedAnalytics] flush];
+}
+
+/*
+ https://segment.com/docs/libraries/ios/#reset
+ */
+RCT_EXPORT_METHOD(reset) {
+    [[SEGAnalytics sharedAnalytics] reset];
 }
 
 -(NSMutableDictionary*) convertToStringDictionary: (NSDictionary *)properties {
