@@ -11,15 +11,13 @@ RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt)
 {
     SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:configKey];
     configuration.flushAt = flushAt;
-    NSLog(@"Setting up RNSegmentIOAnalytics using key=%@", configKey);
-   [SEGAnalytics setupWithConfiguration:configuration];
+    [SEGAnalytics setupWithConfiguration:configuration];
 }
 
 /*
  https://segment.com/docs/libraries/ios/#identify
  */
 RCT_EXPORT_METHOD(identifyUser:(NSString*)userId traits:(NSDictionary *)traits) {
-    NSLog(@"identifyUser: identifying user (id=%@)", userId);
     [[SEGAnalytics sharedAnalytics] identify:userId traits:[self convertToStringDictionary:traits]];
 }
 
