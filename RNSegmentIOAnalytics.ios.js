@@ -4,7 +4,7 @@
  */
 'use strict';
 
-var NativeRNSegmentIOAnalytics = require('NativeModules').RNSegmentIOAnalytics;
+var NativeRNSegmentIOAnalytics = require('react-native').NativeModules.RNSegmentIOAnalytics;
 
 /**
  * High-level docs for the RNSegmentIOAnalytics iOS API can be written here.
