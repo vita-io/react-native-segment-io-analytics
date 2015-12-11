@@ -1,5 +1,26 @@
 {
   "name": "RNSegmentIOAnalytics",
   "version": "0.0.1",
-  "keywords": "react-native"
+  "description": "React Native wrapper for the Segment.com Analytics SDK",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-components",
+    "analytics",
+    "segment",
+    "segmentio",
+    "ios"
+  ],
+  "author": {
+    "name": "Tal Kain",,
+    "email": "tal@kain.net",
+    "url": "https://wwww.smore.com"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "talkain",
+      "email": "tal@kain.net"
+    }
+  ],
 }
