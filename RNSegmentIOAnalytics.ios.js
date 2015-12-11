@@ -7,7 +7,7 @@
 var NativeRNSegmentIOAnalytics = require('react-native').NativeModules.RNSegmentIOAnalytics;
 
 /**
- * High-level docs for the RNSegmentIOAnalytics iOS API can be written here.
+ * RNSegmentIOAnalytics is a React Native iOS wrapper for the Segment.com Analytics SDK.
  */
 
 var RNSegmentIOAnalytics = {
