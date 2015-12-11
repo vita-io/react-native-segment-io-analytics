@@ -34,4 +34,6 @@ ld: '......./Pods/GoogleIDFASupport/Libraries/libAdIdAccessLibrary.a(TAGActualAd
 ```
 There are instructions for fixing it here: https://stackoverflow.com/questions/31395260/google-analytics-libadidaccess-a-does-not-contain-bitcode
 
+## License
 
+This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
