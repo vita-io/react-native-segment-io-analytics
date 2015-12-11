@@ -14,8 +14,8 @@ var RNSegmentIOAnalytics = {
     /*
     Setting up the Segment IO Analytics service
      */
-    setup: function (configKey, flushAt = 20) {
-        NativeRNSegmentIOAnalytics.setup(configKey, flushAt);
+    setup: function (configKey, flushAt = 20, shouldUseLocationServices = false) {
+        NativeRNSegmentIOAnalytics.setup(configKey, flushAt, shouldUseLocationServices);
     },
 
     /*
