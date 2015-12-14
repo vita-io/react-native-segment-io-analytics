@@ -3,6 +3,9 @@
  *
  * @providesModule RNSegmentIOAnalytics
  * @flow
+ *
+ * Created by Tal Kain <tal@kain.net>.
+ * Copyright (c) 2015 Fire Place Inc. All rights reserved.
  */
 'use strict';
 

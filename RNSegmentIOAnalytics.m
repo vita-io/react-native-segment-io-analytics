@@ -1,3 +1,10 @@
+//
+//  RNSegmentIOAnalytics
+//
+//  Created by Tal Kain <tal@kain.net>.
+//  Copyright (c) 2015 Fire Place Inc. All rights reserved.
+//
+
 #import "RNSegmentIOAnalytics.h"
 #import "RCTConvert.h"
 #import "Analytics.h"
