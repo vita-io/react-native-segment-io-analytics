@@ -31,5 +31,8 @@
       "email": "tal@kain.net"
     }
   ],
-  "homepage": "https://github.com/smore-inc/react-native-segment-io-analytics"
+  "homepage": "https://github.com/smore-inc/react-native-segment-io-analytics",
+  "peerDependencies": {
+    "react-native": ">=0.7.0"
+  }
 }
