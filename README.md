@@ -37,3 +37,7 @@ There are instructions for fixing it here: https://stackoverflow.com/questions/3
 ## License
 
 This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+The copyright notice from Segment's project is in the *analytics-ios.LICENSE* file
+
+
