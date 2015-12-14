@@ -6,10 +6,11 @@ Based on SegmentIO (https://segment.com) Analytics project.
 The iOS SDK can be found here: https://github.com/segmentio/analytics-ios
 
 ## Installation
-1. Get the project by cloning it from its GitHub repository into `node_modules/react-native/Libraries/RNSegmentIOAnalytics/` *OR* download the npm package (if exist) using npm install.
+1. Download and install the npm package by running `npm install --save react-native-segment-io-analytics`
 2. In your Podfile, add `pod "Analytics"` to your project.
 3. Make sure your project links to *libAnalytics.a* and *libRNSegmentIOAnalytics.a* (The libraries should be listed under Build Phases -> Link Binary With Libraries".
-4. Run `npm install --save react-native-segment-io-analytics`
+
+(You can also get the package by cloning it from its GitHub repository into `node_modules/react-native/Libraries/RNSegmentIOAnalytics/`)
 
 ## Usage sample
 ```javascript
