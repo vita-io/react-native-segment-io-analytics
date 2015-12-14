@@ -16,7 +16,7 @@ The iOS SDK can be found here: https://github.com/segmentio/analytics-ios
 
 ## Usage sample
 ```javascript
-var RNSegmentIOAnalytics = require('RNSegmentIOAnalytics');
+var RNSegmentIOAnalytics = require('react-native-segment-io-analytics');
 
 var segmentIOWriteKey = "SEGMENT_IO_WRITE_KEY"
 var flushEverySecondsCount = 1
