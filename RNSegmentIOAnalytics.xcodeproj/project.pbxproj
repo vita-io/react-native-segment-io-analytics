@@ -26,14 +26,9 @@
 		134814201AA4EA6300B7C361 /* libRNSegmentIOAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNSegmentIOAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3DEC1AC21097009241FE /* RNSegmentIOAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSegmentIOAnalytics.h; sourceTree = "<group>"; };
 		13BE3DED1AC21097009241FE /* RNSegmentIOAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSegmentIOAnalytics.m; sourceTree = "<group>"; };
-		69A6E0AF1C11ADFB0099E7DC /* Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
-		69A6E0B01C11ADFB0099E7DC /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
-		69A6E0B11C11ADFB0099E7DC /* Integrations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Integrations; sourceTree = "<group>"; };
-		69A6E0B51C11ADFB0099E7DC /* SEGAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalytics.h; sourceTree = "<group>"; };
-		69A6E0B71C11ADFB0099E7DC /* SEGAnalyticsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalyticsIntegration.h; sourceTree = "<group>"; };
-		69A6E0B91C11ADFB0099E7DC /* SEGAnalyticsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalyticsRequest.h; sourceTree = "<group>"; };
-		69A6E0BB1C11ADFB0099E7DC /* SEGAnalyticsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalyticsUtils.h; sourceTree = "<group>"; };
-		69A6E0BD1C11ADFB0099E7DC /* SEGEcommerce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGEcommerce.h; sourceTree = "<group>"; };
+		69948A661C313CC400E8601E /* Integrations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Integrations; sourceTree = "<group>"; };
+		69948A671C313CC400E8601E /* Internal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Internal; sourceTree = "<group>"; };
+		69948A681C313CC400E8601E /* SEGAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalytics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +53,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				69A6E0AF1C11ADFB0099E7DC /* Analytics.h */,
-				69A6E0B01C11ADFB0099E7DC /* Helpers */,
-				69A6E0B11C11ADFB0099E7DC /* Integrations */,
-				69A6E0B51C11ADFB0099E7DC /* SEGAnalytics.h */,
-				69A6E0B71C11ADFB0099E7DC /* SEGAnalyticsIntegration.h */,
-				69A6E0B91C11ADFB0099E7DC /* SEGAnalyticsRequest.h */,
-				69A6E0BB1C11ADFB0099E7DC /* SEGAnalyticsUtils.h */,
-				69A6E0BD1C11ADFB0099E7DC /* SEGEcommerce.h */,
+				69948A661C313CC400E8601E /* Integrations */,
+				69948A671C313CC400E8601E /* Internal */,
+				69948A681C313CC400E8601E /* SEGAnalytics.h */,
 				13BE3DEC1AC21097009241FE /* RNSegmentIOAnalytics.h */,
 				13BE3DED1AC21097009241FE /* RNSegmentIOAnalytics.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -217,6 +207,8 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/Integrations",
+					"$(SRCROOT)/Internal",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -235,6 +227,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/Integrations",
+					"$(SRCROOT)/Internal",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
