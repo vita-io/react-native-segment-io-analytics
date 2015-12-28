@@ -7,7 +7,7 @@
 
 #import "RNSegmentIOAnalytics.h"
 #import "RCTConvert.h"
-#import "Analytics.h"
+#import "SEGAnalytics.h"
 #import <Foundation/Foundation.h>
 
 @implementation RNSegmentIOAnalytics
