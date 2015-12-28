@@ -12,8 +12,6 @@ The iOS SDK can be found here: https://github.com/segmentio/analytics-ios
 4. Go to `node_modules` -> `react-native-segment-io-analytics` -> and choose the `RNSegmentIOAnalytics.xcodeproj` file 
 5. Make sure your project links to *libAnalytics.a* and *libRNSegmentIOAnalytics.a* (The libraries should be listed under "Build Phases -> Link Binary With Libraries").
 
-(You can also get the package by cloning it from its GitHub repository into `node_modules/react-native/Libraries/RNSegmentIOAnalytics/`)
-
 ## Usage sample
 ```javascript
 var RNSegmentIOAnalytics = require('react-native-segment-io-analytics');
