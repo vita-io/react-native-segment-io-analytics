@@ -64,6 +64,20 @@ RCT_EXPORT_METHOD(debug: (BOOL)isEnabled) {
     [SEGAnalytics debug:isEnabled];
 }
 
+/*
+ https://segment.com/docs/libraries/ios/#opt-out
+ */
+RCT_EXPORT_METHOD(disable) {
+    [[SEGAnalytics sharedAnalytics] disable];
+}
+
+/*
+ https://segment.com/docs/libraries/ios/#opt-out
+ */
+RCT_EXPORT_METHOD(enable) {
+    [[SEGAnalytics sharedAnalytics] enable];
+}
+
 -(NSMutableDictionary*) convertToStringDictionary: (NSDictionary *)properties {
     /*
      According to React Native's documentation:

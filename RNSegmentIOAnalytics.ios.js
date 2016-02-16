@@ -66,6 +66,20 @@ var RNSegmentIOAnalytics = {
     debug: function (isEnabled) {
         NativeRNSegmentIOAnalytics.debug(isEnabled);
     },
+
+    /*
+     * https://segment.com/docs/libraries/ios/#opt-out
+     */
+    disable: function () {
+        NativeRNSegmentIOAnalytics.disable();
+    },
+
+    /*
+     * https://segment.com/docs/libraries/ios/#opt-out
+     */
+    enable: function () {
+        NativeRNSegmentIOAnalytics.enable();
+    },
 };
 
 module.exports = RNSegmentIOAnalytics;
