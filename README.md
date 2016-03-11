@@ -36,6 +36,10 @@ ld: '......./Pods/GoogleIDFASupport/Libraries/libAdIdAccessLibrary.a(TAGActualAd
 ```
 There are instructions for fixing it here: https://stackoverflow.com/questions/31395260/google-analytics-libadidaccess-a-does-not-contain-bitcode
 
+# Deployment
+Deploying the project can be done using ```npm publish``` command.
+Read more about it here: https://gist.github.com/coolaj86/1318304
+
 ## License
 
 This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
