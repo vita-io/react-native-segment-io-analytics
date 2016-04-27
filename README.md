@@ -45,5 +45,3 @@ Read more about it here: https://gist.github.com/coolaj86/1318304
 This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 
 The copyright notice from Segment's project is in the *analytics-ios.LICENSE* file
-
-
