@@ -32,8 +32,8 @@ import com.smore.RNSegmentIOAnalytics.RNSegmentIOAnalyticsPackage; // <-- add th
 ```javascript
 var RNSegmentIOAnalytics = require('react-native-segment-io-analytics');
 
-var segmentIOWriteKey = "SEGMENT_IO_WRITE_KEY"
-var flushEverySecondsCount = 1
+var segmentIOWriteKey = "SEGMENT_IO_WRITE_KEY";
+var flushEverySecondsCount = 1;
 RNSegmentIOAnalytics.setup(segmentIOWriteKey, flushEverySecondsCount);
 RNSegmentIOAnalytics.identifyUser("testing", {"name":"test name"});
 RNSegmentIOAnalytics.track("test track", {"name":"test track with name"});
@@ -62,5 +62,3 @@ Read more about it here: https://gist.github.com/coolaj86/1318304
 This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 
 The copyright notice from Segment's project is in the *analytics-ios.LICENSE* file
-
-
