@@ -31,6 +31,13 @@ var RNSegmentIOAnalytics = {
     identifyUser: function (userId, traits) {
         NativeRNSegmentIOAnalytics.identifyUser(userId, traits);
     },
+    
+    /*
+     * https://segment.com/docs/libraries/ios/#alias
+     */
+    alias: function (newId) {
+        NativeRNSegmentIOAnalytics.alias(newId);
+    },
 
     /*
      * https://segment.com/docs/libraries/ios/#track
