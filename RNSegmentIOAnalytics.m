@@ -30,6 +30,13 @@ RCT_EXPORT_METHOD(identifyUser:(NSString*)userId traits:(NSDictionary *)traits) 
 }
 
 /*
+ https://segment.com/docs/libraries/ios/#alias
+ */
+RCT_EXPORT_METHOD(alias:(NSString *)newId) {
+    [[SEGAnalytics sharedAnalytics] alias:newId];
+}
+
+/*
  https://segment.com/docs/libraries/ios/#track
  */
 RCT_EXPORT_METHOD(track:(NSString*)trackText properties:(NSDictionary *)properties) {
