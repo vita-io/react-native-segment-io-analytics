@@ -2,14 +2,15 @@
 
 Written by Tal Kain <tal@kain.net>
 
-Based on SegmentIO (https://segment.com) Analytics project. See [iOS SDK](https://github.com/segmentio/analytics-ios) and [Android SDK](https://github.com/segmentio/analytics-android).
+Based on SegmentIO (https://segment.com) Analytics project.
+See [iOS SDK](https://github.com/segmentio/analytics-ios) and [Android SDK](https://github.com/segmentio/analytics-android).
 
 
 ## iOS Installation
 1. Download and install the npm package by running `npm install --save react-native-segment-io-analytics`
 2. In your Podfile, add `pod "Analytics"` to your project.
-3. Inside Xcode, go to the project navigator and right click `Libraries` -> `Add Files to [your project's name]`
-4. Go to `node_modules` -> `react-native-segment-io-analytics` -> and choose the `RNSegmentIOAnalytics.xcodeproj` file 
+3. Inside Xcode (make sure you've opened your `.xcworkspace` file), go to the project navigator and right click `Libraries` -> `Add Files to [your project's name]`.
+4. Go to `node_modules` -> `react-native-segment-io-analytics` -> and choose the `RNSegmentIOAnalytics.xcodeproj` file.
 5. Make sure your project links to *libAnalytics.a* and *libRNSegmentIOAnalytics.a* (The libraries should be listed under "Build Phases -> Link Binary With Libraries").
 
 ## Android Installation
@@ -21,7 +22,7 @@ import com.facebook.react.ReactPackage;
 import com.smore.RNSegmentIOAnalytics.RNSegmentIOAnalyticsPackage; // <-- add this
 ...
 
-      return Arrays.<ReactPackage>asList( 
+      return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
         new RNSegmentIOAnalyticsPackage(), // <-- add this
         ...
@@ -54,7 +55,7 @@ ld: '......./Pods/GoogleIDFASupport/Libraries/libAdIdAccessLibrary.a(TAGActualAd
 There are instructions for fixing it here: https://stackoverflow.com/questions/31395260/google-analytics-libadidaccess-a-does-not-contain-bitcode
 
 ## Deployment
-Deploying the project can be done using ```npm publish``` command. 
+Deploying the project can be done using ```npm publish``` command.
 Read more about it here: https://gist.github.com/coolaj86/1318304
 
 ## License
