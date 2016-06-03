@@ -14,12 +14,13 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt :(BOOL)shouldUseLocationServices)
+RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt :(BOOL)shouldUseLocationServices :(BOOL)debug)
 {
     SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:configKey];
     configuration.flushAt = flushAt;
     configuration.shouldUseLocationServices = shouldUseLocationServices;
     [SEGAnalytics setupWithConfiguration:configuration];
+    [SEGAnalytics debug:debug];
 }
 
 /*
