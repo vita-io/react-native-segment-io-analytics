@@ -21,8 +21,8 @@ var RNSegmentIOAnalytics = {
      * @param flushAt https://segment.com/docs/libraries/ios/#flushing
      * @param shouldUseLocationServices https://segment.com/docs/libraries/ios/#location-services
      */
-    setup: function (configKey, flushAt = 20, shouldUseLocationServices = false) {
-        NativeRNSegmentIOAnalytics.setup(configKey, flushAt, shouldUseLocationServices);
+    setup: function (configKey, flushAt = 20, shouldUseLocationServices = false, debug = false) {
+        NativeRNSegmentIOAnalytics.setup(configKey, flushAt, shouldUseLocationServices, debug);
     },
 
     /*
