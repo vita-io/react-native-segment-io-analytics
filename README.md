@@ -7,7 +7,7 @@ The iOS SDK can be found here: https://github.com/segmentio/analytics-ios
 
 ## Installation
 1. Download and install the npm package by running `npm install --save react-native-segment-io-analytics`
-2. In your Podfile, add `pod "Analytics"` to your project.
+2. In your Podfile, add `pod "Analytics"` to your project and run `pod install` in your ios folder
 3. Inside Xcode (make sure you've opened your `.xcworkspace` file), go to the project navigator and right click `Libraries` -> `Add Files to [your project's name]`.
 4. Go to `node_modules` -> `react-native-segment-io-analytics` -> and choose the `RNSegmentIOAnalytics.xcodeproj` file.
 5. Make sure your project links to *libAnalytics.a* and *libRNSegmentIOAnalytics.a* (The libraries should be listed under "Build Phases -> Link Binary With Libraries").
