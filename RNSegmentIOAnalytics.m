@@ -14,12 +14,13 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt :(BOOL)shouldUseLocationServices)
+RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt :(BOOL)shouldUseLocationServices :(BOOL)debug)
 {
     SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:configKey];
     configuration.flushAt = flushAt;
     configuration.shouldUseLocationServices = shouldUseLocationServices;
     [SEGAnalytics setupWithConfiguration:configuration];
+    [SEGAnalytics debug:debug];
 }
 
 /*
@@ -27,6 +28,13 @@ RCT_EXPORT_METHOD(setup:(NSString*)configKey :(NSUInteger)flushAt :(BOOL)shouldU
  */
 RCT_EXPORT_METHOD(identifyUser:(NSString*)userId traits:(NSDictionary *)traits) {
     [[SEGAnalytics sharedAnalytics] identify:userId traits:[self convertToStringDictionary:traits]];
+}
+
+/*
+ https://segment.com/docs/libraries/ios/#alias
+ */
+RCT_EXPORT_METHOD(alias:(NSString *)newId) {
+    [[SEGAnalytics sharedAnalytics] alias:newId];
 }
 
 /*
